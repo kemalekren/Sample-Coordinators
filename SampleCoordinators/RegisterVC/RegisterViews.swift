@@ -43,7 +43,7 @@ class RegisterViews: UIStackView {
         
         axis = .vertical
         distribution = .fillEqually
-        spacing = 40
+        spacing = 10
         
         [userName, password,confirmPassword, registerButton].forEach { (views) in
             addArrangedSubview(views)

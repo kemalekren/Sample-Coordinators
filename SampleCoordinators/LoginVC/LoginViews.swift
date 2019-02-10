@@ -41,7 +41,7 @@ class LoginViews: UIStackView {
 
         axis = .vertical
         distribution = .fillEqually
-        spacing = 40
+        spacing = 10
         
         [userName, password, submitButton].forEach { (views) in
             addArrangedSubview(views)

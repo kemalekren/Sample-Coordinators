@@ -19,10 +19,17 @@ class LoginCoordinator : Coordinator {
         self.navigationController = navigationController
     }
     
+    private func navBarSetup(){
+        navigationController.isNavigationBarHidden = false
+        navigationController.navigationBar.barTintColor = .homeVC
+        navigationController.navigationBar.tintColor = .white
+    }
+
+    
     func start() {
         let vc = LoginVC()
         vc.coordinator = self
-        navigationController.isNavigationBarHidden = false
+        navBarSetup()
         navigationController.pushViewController(vc, animated: true)
     }
     

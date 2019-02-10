@@ -18,10 +18,16 @@ class RegisterCoordinator : Coordinator {
         self.navigationController = navigationController
     }
     
+    private func navBarSetup(){
+        navigationController.isNavigationBarHidden = false
+        navigationController.navigationBar.barTintColor = .registerVC
+        navigationController.navigationBar.tintColor = .white
+    }
+    
     func start() {
         let vc = RegisterVC()
         vc.coordinator = self
-        navigationController.isNavigationBarHidden = false
+        navBarSetup()
         navigationController.pushViewController(vc, animated: true)
     }
     

@@ -26,7 +26,7 @@ final class HomeVC: UIViewController {
 
         view.backgroundColor = UIColor.homeVC
         view.addSubview(subviews)
-        subviews.anchor(top: nil, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20), size: CGSize(width: 0, height: view.frame.height / 4))
+        subviews.anchor(top: nil, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: UIEdgeInsets(top: 0, left: 40, bottom: 0, right: 40), size: CGSize(width: 0, height: 200))
         subviews.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         subviews.loginButton.addTarget(self, action: #selector(loginAction), for: .touchUpInside)
         subviews.registerButton.addTarget(self, action: #selector(registerAction), for: .touchUpInside)

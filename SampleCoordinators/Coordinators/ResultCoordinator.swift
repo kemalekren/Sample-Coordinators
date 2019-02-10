@@ -21,11 +21,17 @@ class ResultCoordinator : Coordinator {
         
     }
     
+    private func navBarSetup(){
+        navigationController.isNavigationBarHidden = false
+        navigationController.navigationBar.barTintColor = .resultVC
+        navigationController.navigationBar.tintColor = .white
+    }
+    
     func start() {
         let vc = ResultVC()
         vc.userValue = username
         vc.coordinator = self
-        navigationController.isNavigationBarHidden = false
+        navBarSetup()
         navigationController.pushViewController(vc, animated: true)
     }
     

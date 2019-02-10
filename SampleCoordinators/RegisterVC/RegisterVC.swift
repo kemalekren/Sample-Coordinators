@@ -19,9 +19,10 @@ class RegisterVC : UIViewController {
     }
     
     func setupViews() {
+        hideKeyboardWhenTappedAround()
         view.backgroundColor = .registerVC
         view.addSubview(subViews)
-        subViews.anchor(top: nil, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10), size: CGSize(width: 0, height: view.frame.height / 2))
+        subViews.anchor(top: nil, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20), size: CGSize(width: 0, height: 200))
         subViews.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         subViews.registerButton.addTarget(self, action: #selector(register), for: .touchUpInside)
     }
