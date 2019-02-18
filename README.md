@@ -2,17 +2,17 @@
 Using Coordinators in Sample Login / Register Swift Project
 Sample Non Functional Login UI with Coordinators.
 
-References
+## References
 
-Paul Hudson YouTube Videos
+### _Paul Hudson YouTube Videos_
 
-https://www.youtube.com/watch?v=7HgbcTqxoN4
-https://www.youtube.com/watch?v=ueByb0MBMQ4
+* https://www.youtube.com/watch?v=7HgbcTqxoN4
+* https://www.youtube.com/watch?v=ueByb0MBMQ4
 
 
-Coordinators were pioneered on iOS by Soroush Khanlou
+### _Coordinators were pioneered on iOS by Soroush Khanlou_
 
-http://khanlou.com/
+* http://khanlou.com/
 
 Thank you Paul Hudson and Soroush Khanlou
 
